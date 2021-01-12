@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-const element = <h1 className="element">Кажется, мы подключили React</h1>;
-ReactDOM.render(
-  element,
-  document.getElementById('root'),
+import Landing from "./components/Landing/Landing.jsx";
+
+const element = (
+      <Landing />
 );
+
+ReactDOM.render(element, document.getElementById("root"));

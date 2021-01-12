@@ -1,7 +1,7 @@
 const path = require("path");
-//const ​webpack ​ = require(​ 'webpack'​ )​
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// const ​webpack ​ = require(​ 'webpack'​ )​
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
@@ -21,15 +21,13 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
+            plugins: ["@babel/plugin-proposal-class-properties"],
           },
         },
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: "css-loader",
-          fallback: "style-loader",
-        }),
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
@@ -38,4 +36,10 @@ module.exports = {
     compress: true,
     port: 9000,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+    new MiniCssExtractPlugin(),
+  ],
 };
