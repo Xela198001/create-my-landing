@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "[name].js",
+    filename: "js/[name].js",
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -31,6 +31,17 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
         sideEffects: true,
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|woff2?|ttf|otf|eot)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "../img/[name].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   devServer: {
@@ -40,7 +51,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "./css/[name].css",
       chunkFilename: "[id].css",
     }),
     new HtmlWebpackPlugin({
