@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Header from "./Header/Header.jsx";
+import Header from "./Header/Header";
 
 function Landing() {
 const [name, setName] = useState("Alex");
 
   return (
-    <div className="container p-0 ml-0 mr-auto">
+    <div className="mx-auto m-0 p-0">
       <Header></Header>
     </div>
   );

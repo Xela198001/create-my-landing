@@ -4,6 +4,7 @@ import Landing from "./components/Landing/Landing.jsx";
 import './styles.css';
 
 const element = (
+      
       <Landing />
 );
 
