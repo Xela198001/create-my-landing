@@ -1,0 +1,15 @@
+.main-advntages {
+  height: 800px;
+}
+
+.advantages-item {
+  width: 19rem;
+}
+
+.icon {
+      fill: slateblue;
+}
+
+.main-advntages:hover.iconText {
+  fill: #000;
+}
