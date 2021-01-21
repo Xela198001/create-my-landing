@@ -34,6 +34,7 @@ module.exports = {
         "group-hover",
       ],
       boxShadow: ["responsive", "hover", "focus", "active", "group-hover"],
+      margin: ["hover", "focus"],
     },
   },
   plugins: [],
