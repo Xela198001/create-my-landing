@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ItemTeam from '../Team/ItemTeam.jsx';
 
 // import IconCheck from "../advantages/img/icons/iconCheck";
 // import "./ListItem.css";
@@ -10,12 +11,9 @@ class ListItemDiv extends Component {
   }
   render() {
     const items = this.props.listItems;
-
     return (
-        items.map((item, index) => (
-          <div key={index}>
-            {item}
-          </div>
+      items.map((item, index) => (
+          <ItemTeam listItem={item} key={index} />
         ))
     );
   }

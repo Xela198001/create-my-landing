@@ -1,26 +1,36 @@
 import React from "react";
+import AvatarMes from './img/avatars/mes.jpg';
 
 const items = [
   {
     id: 1,
-    title: '"Старт"',
-    desc: "Сайт будет хорошо отображаться на смартфонах и планшетах.",
-    plus: ["Адаптивный", "Дизайн", "Наполнение", "Продающая структура"],
-    price: 5000,
+    post: "Frontend-разработчик",
+    avatar: AvatarMes,
   },
   {
     id: 2,
-    title: '"Стандарт"',
-    desc: "Сайт будет хорошо отображаться на смартфонах и планшетах.",
-    plus: ["Адаптивный", "Дизайн", "Наполнение", "Продающая структура"],
-    price: 12000,
+    post: "Web-дизайнер",
+    avatar: AvatarMes,
   },
   {
     id: 3,
-    title: '"ВИП"',
-    desc: "Сайт будет хорошо отображаться на смартфонах и планшетах.",
-    plus: ["Адаптивный", "Дизайн", "Наполнение", "Продающая структура"],
-    price: 22000,
+    post: "Копирайтер",
+    avatar: AvatarMes,
+  },
+  {
+    id: 4,
+    post: "Маркетолог",
+    avatar: AvatarMes,
+  },
+  {
+    id: 5,
+    post: "Верстальщик",
+    avatar: AvatarMes,
+  },
+  {
+    id: 6,
+    post: "Backend-разработчик",
+    avatar: AvatarMes,
   },
 ];
 

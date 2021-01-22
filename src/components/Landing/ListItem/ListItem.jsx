@@ -10,7 +10,6 @@ class ListItem extends Component {
   }
   render() {
     const items = this.props.listItems;
-    console.log(items);
     return (
       <ul>
         {items.plus.map((item, index) => (
