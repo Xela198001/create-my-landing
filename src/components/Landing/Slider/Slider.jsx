@@ -1,5 +1,6 @@
 // import { current } from "fibers";
 import React from "react";
+import "./Slider.css";
 // import { ArowLeft } from "./img/ArowLeft";
 // import { ArrowRight } from "./img/ArrowRight";
 // import { ZoomIcon } from "./img/ZoomIcon";
@@ -36,8 +37,8 @@ function Slider({data, initial}) {
 
   return (
     <div className=" w-96 h-96 pb-4">
-      <div className="slider_inner w-96 h-96 flex justify-center aling-center overflow-hidden">
-        <img className="bg-cover" src={data[index]} alt="slide" />
+      <div className="slider_inner w-96 h-96 flex justify-center aling-center overflow-hidden m-auto">
+        {data[index]}
       </div>
     </div>
   );
