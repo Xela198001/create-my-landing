@@ -3,6 +3,7 @@ import Header from "./Header/Header";
 import Advantages from './advantages/advantages';
 import Team from './Team/Team';
 import Price from './Price/Price';
+import Portfolio from './Potfolio/Portfolio';
 
 function Landing() {
 const [name, setName] = useState("Alex");
@@ -12,7 +13,8 @@ const [name, setName] = useState("Alex");
       <Header></Header>
       <Advantages />
       <Price title="Цены на Landing Page" />
-      <Team title="Команда"/>
+      <Team title="Команда" />
+      <Portfolio title="Портфолио"/>
     </div>
   );
 };
