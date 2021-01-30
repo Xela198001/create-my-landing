@@ -38,7 +38,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               path: path.resolve(__dirname, "build"),
-              name: "../img/[name].[ext]",
+              name: "./img/[name].[ext]",
             },
           },
         ],
